@@ -2,11 +2,10 @@
   "name": "database",
   "version": "1.0.0",
   "description": "Учебный проект Эдуарда Пузыно по работе с базами данных",
-  "main": "app.js",
-  "type": "module",
+  "main": "index.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -19,7 +18,8 @@
   },
   "homepage": "https://github.com/slver-dragon/database#readme",
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "url": "^0.11.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
