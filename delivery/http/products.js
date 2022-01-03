@@ -2,17 +2,6 @@ const Router = require("express");
 const { json } = require("express/lib/response");
 const router = new Router();
 
-const response = {
-  error: null,
-  value: [
-    {
-      id: 1,
-      name: "Кхорн",
-      side: "Хаос",
-    },
-  ],
-};
-
 router.get("", async (req, res) => {
   if (response.error) {
     res.status(500).json(response.error || new Error("UC uncertain error"));
